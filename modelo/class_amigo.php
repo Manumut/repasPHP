@@ -31,6 +31,8 @@
             while($consulta->fetch()){
                 $datosAmigos[$idAmigo]=[$nombre,$apellidos,$f_nac,$ver];
             }
+            $consulta->close();
+            return $datosAmigos;
 
         }
 
